@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-//import './Style.css';
-import { Link } from "react-router-dom";
+import './Style.css';
+import { Link, useNavigate } from "react-router-dom";
 
 const CrearPuntos = ({handlerAgregar}) => {
+    const navigate = useNavigate();
     const[puntos, setPuntos] = useState({
         tipoDePunto: "",
         direccion: "",
@@ -27,6 +28,8 @@ const CrearPuntos = ({handlerAgregar}) => {
             estado: "",
             observaciones: ""
         });
+        // Navegar de vuelta a la lista después de crear
+        navigate('/PuntosDeRecoleccion');
     }
 
     return (

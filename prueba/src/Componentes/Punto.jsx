@@ -8,7 +8,7 @@ const Punto = (props) => {
     const navigate = useNavigate();
 
     const actualizar = () => {
-        navigate("/actualizarpunto/" + id);
+        navigate("/editar/punto/" + id);
     };
 
     const getEstadoIcon = (estado) => {
