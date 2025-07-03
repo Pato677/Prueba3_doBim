@@ -1,0 +1,102 @@
+{
+    "puntosDeRecoleccion": [
+        {
+            "id": 1,
+            "tipoDePunto": "contenedores tradicionales",
+            "direccion": "Calle 10 #23-45, Barrio Centro",
+            "estado": "activo",
+            "observaciones": "Recolección diaria, buen estado general"
+        },
+        {
+            "id": 2,
+            "tipoDePunto": "puntos de reciclaje",
+            "direccion": "Avenida Principal #100, Frente al parque",
+            "estado": "danado",
+            "observaciones": "Contenedor de plástico roto, requiere reparación"
+        },
+        {
+            "id": 3,
+            "tipoDePunto": "puntos criticos",
+            "direccion": "Carrera 5 #12-34, Esquina norte",
+            "estado": "activo",
+            "observaciones": "Zona de alta generación de residuos"
+        },
+        {
+            "id": 4,
+            "tipoDePunto": "puntos especiales",
+            "direccion": "Calle 8 #56-78, Edificio Verde",
+            "estado": "retirado",
+            "observaciones": "Punto removido por obras viales"
+        },
+        {
+            "id": 5,
+            "tipoDePunto": "contenedores tradicionales",
+            "direccion": "Carrera 15 #45-23, Barrio Los Pinos",
+            "estado": "activo",
+            "observaciones": "Recolección tres veces por semana"
+        },
+        {
+            "id": 6,
+            "tipoDePunto": "puntos de reciclaje",
+            "direccion": "Calle 20 #67-89, Centro Comercial",
+            "estado": "activo",
+            "observaciones": "Alto volumen de reciclaje, muy utilizado"
+        },
+        {
+            "id": 7,
+            "tipoDePunto": "puntos criticos",
+            "direccion": "Avenida 30 #12-56, Sector Industrial",
+            "estado": "danado",
+            "observaciones": "Contenedor vandalizando, requiere reemplazo"
+        },
+        {
+            "id": 8,
+            "tipoDePunto": "contenedores tradicionales",
+            "direccion": "Calle 25 #34-12, Barrio San José",
+            "estado": "activo",
+            "observaciones": "Zona residencial, recolección diaria"
+        },
+        {
+            "id": 9,
+            "tipoDePunto": "puntos especiales",
+            "direccion": "Carrera 8 #78-90, Hospital Central",
+            "estado": "activo",
+            "observaciones": "Manejo de residuos médicos especializados"
+        },
+        {
+            "id": 10,
+            "tipoDePunto": "puntos de reciclaje",
+            "direccion": "Calle 35 #23-67, Universidad Nacional",
+            "estado": "activo",
+            "observaciones": "Punto educativo con separación de materiales"
+        },
+        {
+            "id": 11,
+            "tipoDePunto": "contenedores tradicionales",
+            "direccion": "Avenida 12 #89-45, Barrio La Esperanza",
+            "estado": "retirado",
+            "observaciones": "Temporalmente fuera de servicio por reparaciones"
+        },
+        {
+            "id": 12,
+            "tipoDePunto": "puntos criticos",
+            "direccion": "Calle 40 #15-78, Mercado Popular",
+            "estado": "activo",
+            "observaciones": "Alta generación orgánica, requiere atención frecuente"
+        },
+        {
+            "id": 13,
+            "tipoDePunto": "puntos especiales",
+            "direccion": "Carrera 22 #56-34, Estación de Buses",
+            "estado": "activo",
+            "observaciones": "Punto de alto tráfico, vaciado cada 6 horas"
+        },
+        {
+            "id": 14,
+            "tipoDePunto": "puntos de reciclaje",
+            "direccion": "Calle 18 #91-23, Parque Central",
+            "estado": "danado",
+            "observaciones": "Tapa rota del contenedor de vidrio"
+        }
+    ]
+}
