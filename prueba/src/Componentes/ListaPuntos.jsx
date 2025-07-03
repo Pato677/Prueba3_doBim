@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Punto from './punto';
+import Punto from './Punto';
 import './estilos/ListaPuntos.css';
 import { Link } from "react-router-dom";
 
