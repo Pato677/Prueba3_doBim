@@ -1,0 +1,222 @@
+/* Punto.css */
+.punto {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 16px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 400px;
+}
+
+.punto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.punto h1 {
+  color: #2d3748;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  text-transform: capitalize;
+}
+
+.punto h2 {
+  color: #4a5568;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.punto h3.estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.estado.estado-activo {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.estado.estado-danado {
+  background-color: #fed7aa;
+  color: #c05621;
+}
+
+.estado.estado-retirado {
+  background-color: #fed7d7;
+  color: #c53030;
+}
+
+.observaciones {
+  background-color: #f7fafc;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 3px solid #e2e8f0;
+  margin: 16px 0;
+  color: #4a5568;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.reacciones {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin: 20px 0;
+  padding: 16px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.reacciones h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.btn-like, .btn-dislike {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-like {
+  background-color: #48bb78;
+  color: white;
+}
+
+.btn-like:hover {
+  background-color: #38a169;
+  transform: translateY(-1px);
+}
+
+.btn-dislike {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.btn-dislike:hover {
+  background-color: #c53030;
+  transform: translateY(-1px);
+}
+
+.acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn-eliminar, .btn-actualizar {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-eliminar {
+  background-color: #fed7d7;
+  color: #c53030;
+  border: 2px solid transparent;
+}
+
+.btn-eliminar:hover {
+  background-color: #feb2b2;
+  border-color: #e53e3e;
+  transform: translateY(-2px);
+}
+
+.btn-actualizar {
+  background-color: #bee3f8;
+  color: #2b6cb0;
+  border: 2px solid transparent;
+}
+
+.btn-actualizar:hover {
+  background-color: #90cdf4;
+  border-color: #3182ce;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .punto {
+    margin: 12px;
+    padding: 20px;
+    max-width: none;
+  }
+  
+  .reacciones {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .reacciones h4 {
+    margin-bottom: 4px;
+  }
+  
+  .acciones {
+    flex-direction: column;
+  }
+  
+  .btn-eliminar, .btn-actualizar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .punto {
+    margin: 8px;
+    padding: 16px;
+  }
+  
+  .punto h1 {
+    font-size: 18px;
+  }
+  
+  .punto h2 {
+    font-size: 14px;
+  }
+  
+  .punto h3.estado {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
