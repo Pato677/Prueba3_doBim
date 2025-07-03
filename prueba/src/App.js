@@ -1,6 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Inicio from './Componentes/Inicio';
+import ListaPuntos from './Componentes/ListaPuntos';
+import CrearPuntos from './Componentes/CrearPuntos';
+import EditarPuntos from './Componentes/EditarPuntos';
 
 function App() {
   return (
