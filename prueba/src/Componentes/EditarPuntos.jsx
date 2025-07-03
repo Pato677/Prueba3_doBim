@@ -18,7 +18,7 @@ const EditarPuntos = ({ handlerActualizar, puntosDeRecoleccion }) => {
       
       // Buscar comparando tanto números como strings ya que json-server puede devolver strings
       const puntoEncontrado = puntosDeRecoleccion.find(p => {
-        return p.id == id || p.id === parseInt(id) || p.id.toString() === id.toString();
+        return p.id === id || p.id === parseInt(id) || p.id.toString() === id.toString();
       });
       
       if (puntoEncontrado) {
