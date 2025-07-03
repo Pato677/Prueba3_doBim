@@ -1,33 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import './estilos/Punto.css';
 import { useNavigate } from "react-router-dom";
 
 const Punto = (props) => {
-    const { id, tipoDePunto, direccion, estado, observaciones, onLike, onDislike, onEliminar } = props;
-    
-    // Estado para manejar las reacciones del punto
-    const [reacciones, setReacciones] = useState({
-        likes: 0,
-        dislikes: 0
-    });
+    const { id, tipoDePunto, direccion, estado, observaciones, onEliminar } = props;
     
     const navigate = useNavigate();
-
-    const handlerLike = () => {
-        setReacciones((prevState) => ({
-            ...prevState, 
-            likes: prevState.likes + 1
-        }));
-        onLike();
-    };
-
-    const handlerDislike = () => {
-        setReacciones((prevState) => ({
-            ...prevState,
-            dislikes: prevState.dislikes + 1
-        }));
-        onDislike();
-    };
 
     const actualizar = () => {
         navigate("/actualizarpunto/" + id);
@@ -61,14 +39,6 @@ const Punto = (props) => {
             {observaciones && (
                 <p className="observaciones">💬 {observaciones}</p>
             )}
-            
-            <div className="reacciones">
-                <h4>👍 Likes: {reacciones.likes}</h4>
-                <button onClick={handlerLike} className="btn-like">Like</button>
-                
-                <h4>👎 Dislikes: {reacciones.dislikes}</h4>
-                <button onClick={handlerDislike} className="btn-dislike">Dislike</button>
-            </div>
             
             <div className="acciones">
                 <button onClick={() => onEliminar(id)} className="btn-eliminar">
