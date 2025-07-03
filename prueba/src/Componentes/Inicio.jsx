@@ -10,11 +10,8 @@ const Inicio = () => {
             <Link to="/CrearPuntos" className="btn btn-primary">
                 Ir a Crear Puntos
             </Link>
-<<<<<<< HEAD
             <Link to="/ListaPuntos" className="btn btn-secondary ml-2">
-=======
             <Link to="/PuntosDeRecoleccion" className="btn btn-secondary ml-2">
->>>>>>> cb831a4b5eed5be018963b65106c71f2cae9b676
                 Ver Puntos
             </Link>
             <Link to="/usuarios" className="btn btn-success ml-2">
